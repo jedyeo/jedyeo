@@ -1,6 +1,6 @@
 ### Hi there 👋🏼 
 
-Hey, I'm [Jed](http://jedyeo.com/). I'm a fourth year Engineering Physics student. I'm currently in school looking for an internship for Summer 2022.
+Hey, I'm [Jed](http://jedyeo.com/). I'm a fifth year Engineering Physics student at the University of British Columbia. I'm expected to graduate in May 2023 and am not currently looking for any positions, though please feel free to reach out and connect!
 
 
 **Skillset:**  
