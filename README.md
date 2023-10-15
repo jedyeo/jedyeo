@@ -1,6 +1,6 @@
 ### Hi there 👋🏼 
 
-Hey, I'm [Jed](http://jedyeo.com/). I'm based in Austin, U.S.A. as a software engineer for [Cvent](https://www.cvent.com/). I graduated from [UBC Engineering Physics](https://you.ubc.ca/ubc_programs/engineering-physics/) in 2023, focusing on all things related to math and computers. Please reach out and connect, I love meeting new people!
+Hey, I'm [Jed](http://jedyeo.com/). I'm based in Austin, U.S.A. as a software engineer for [Cvent](https://www.cvent.com/). I graduated from [UBC Engineering Physics](https://www.engphys.ubc.ca/about/) in 2023, focusing on all things related to math and computers. Please reach out and connect, I love meeting new people!
 
 
 **Skillset:**  
