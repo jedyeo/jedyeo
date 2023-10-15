@@ -1,6 +1,6 @@
 ### Hi there 👋🏼 
 
-Hey, I'm [Jed](http://jedyeo.com/). I'm a fifth year Engineering Physics student at the University of British Columbia. I'm expected to graduate in May 2023 and am not currently looking for any positions, though please feel free to reach out and connect!
+Hey, I'm [Jed](http://jedyeo.com/). I'm based in Austin, U.S.A. as a software engineer for [Cvent](https://www.cvent.com/). I graduated from [UBC Engineering Physics](https://you.ubc.ca/ubc_programs/engineering-physics/) in 2023, focusing on all things related to math and computers. Please reach out and connect, I love meeting new people!
 
 
 **Skillset:**  
