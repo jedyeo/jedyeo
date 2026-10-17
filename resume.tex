@@ -1,0 +1,148 @@
+%-------------------------
+% Jed Yeo - Resume
+% Based on the common one-page "Jake's Resume" layout (pdfLaTeX)
+%-------------------------
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-2pt}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeRole}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{\small #1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Jed Yeo} \\ \vspace{1pt}
+    \small \href{mailto:jed324@gmail.com}{\underline{jed324@gmail.com}} $|$
+    \href{https://linkedin.com/in/jedyeo}{\underline{linkedin.com/in/jedyeo}} $|$
+    \href{https://github.com/jedyeo}{\underline{github.com/jedyeo}}
+\end{center}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {The University of British Columbia}{May 2023}
+      {Bachelor of Applied Science, Engineering Physics}{Vancouver, BC, Canada}
+  \resumeSubHeadingListEnd
+
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Software Engineer II}{October 2023 --- Present}
+      {Cvent}{Austin, TX, USA}
+      \resumeItemListStart
+        % TODO(Jed): add real numbers where you have them (users, events, conversion lift, load times, adoption).
+        \resumeItem{Build and ship full-stack features for \textbf{Cvent Essentials}, a product for simple in-person events, including a rebuilt attendee engagement experience and new planner-side tools}
+        \resumeItem{Built the event website \textbf{template system} in the site editor: creating sites from starting templates, saved starting points and a reusable template preview component}
+        \resumeItem{Improved site editor reliability by keeping widget content consistent across the editor, preview and live site across devices, and fixing template linking at event creation and copy that duplicated template data and registration questions}
+        \resumeItem{\textbf{Attendee Hub}: integrated a chat moderation engine supporting live events of 10,000+ attendees and built \textbf{Simple Sign Up}, an on-the-fly registration flow that improved attendee conversion}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer Intern}{June 2022 --- August 2022}
+      {Cvent}{Vancouver, BC, Canada}
+      \resumeItemListStart
+        \resumeItem{Built moderation features in \textbf{TypeScript} and \textbf{React} for an event discussion board, letting administrators moderate chat content and enforce Cvent's Community Safety guidelines}
+        \resumeItem{Improved back-end performance by 400\% by running calls to an internal API concurrently to update event start and end times, using \textbf{TypeScript} and \textbf{GraphQL}}
+        \resumeItem{Worked in an \textbf{Agile} sprint team: design meetings, code reviews and scrums}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Developer Co-op}{January 2020 --- March 2020}
+      {Plantiga Technologies}{Vancouver, BC, Canada}
+      \resumeItemListStart
+        \resumeItem{Developed a data pipeline on \textbf{Google Cloud Platform} with \textbf{Python} and \textbf{React} to summarize anonymized patient data in an administrative interface, ensuring \textbf{HIPAA} compliance}
+        \resumeItem{Created an internal tool with \textbf{Python} and the \textbf{Slack API} that generates patient reports with user activity history, streamlining data retrieval for the maintenance engineering team}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Demonstrating Special Relativity in Virtual Reality}{2023}
+      {UBC Engineering Physics Project Laboratory}{Vancouver, BC, Canada}
+      \resumeItemListStart
+        \resumeItem{Built a \textbf{Unity} virtual reality experience for Meta Quest, in a team of four, that lets users see four relativistic effects (Doppler, spotlight, space distortion and time dilation) by moving through a virtual farm}
+        \resumeItem{Programmed \textbf{C\#} scripts for time dilation driven by headset velocity and acceleration, and an in-game menu to toggle and adjust effect intensity for accessibility}
+        \resumeItem{Led project planning with UBC Physics and Engineering to define requirements}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Machine Learning Models for Cryogenic Microscope Imaging}{2022}
+      {UBC Computer Science, Stanford Linear Accelerator Center}{Vancouver, BC, Canada}
+      \resumeItemListStart
+        \resumeItem{Developed a \textbf{Python} wrapper for an open-source \textbf{C} program that generates artificial electron microscope images and tilt series, to improve existing generative algorithms}
+        \resumeItem{Directed design of an \textbf{iterative refinement machine learning model} that estimates particle alignments and reconstructs a 3D model; ran code reviews and weekly sponsor updates}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript, TypeScript, Python, Java, C\#, C, C++} \\
+     \textbf{Frontend}{: React, HTML/CSS, responsive web design, WCAG accessibility} \\
+     \textbf{Backend and APIs}{: Node.js, GraphQL, API integration, concurrent programming} \\
+     \textbf{Cloud and data}{: Google Cloud Platform, data pipelines, Slack API} \\
+     \textbf{Practices}{: full-stack development, Agile, code review, machine learning} \\
+     \textbf{Tools}{: Git, Unity}
+    }}
+ \end{itemize}
+
+\end{document}

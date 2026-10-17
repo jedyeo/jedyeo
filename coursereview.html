@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-    <title>JED YEO</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UBC course review · Jed Yeo</title>
+<meta name="description" content="Course reviews for future UBC students.">
+<link rel="preload" href="fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/main.css">
+<script>
+document.documentElement.className="js";
+Promise.race([document.fonts.load("640 1em Geist"),new Promise(function(r){setTimeout(r,1500)})]).then(function(){document.documentElement.classList.add("ready")});
+</script>
 </head>
+<body>
+<div class="page">
+  <nav aria-label="Main">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="coursereview.html" aria-current="page">UBC course review</a></li>
+      <li><a href="resume.pdf">Resumé</a></li>
+      <li><a href="https://www.linkedin.com/in/jedyeo/">LinkedIn</a></li>
+      <li><a href="https://github.com/jedyeo">GitHub</a></li>
+    </ul>
+  </nav>
 
-<body id="bg-img">
-    <div style="margin: 0 auto; max-width: 36em;">
-        <header>
-            <h1>Jed Yeo</h1>
-        </header>
-        <div class="container">
-            <ul>
-                <li><a href="index.html" class="nav-link">Home</a></li> 
-                <li><a href="blog.html" class="nav-link">Blog</a></li>
-                <li><a href="https://www.linkedin.com/in/jedyeo/" class="nav-link">LinkedIn</a></li>
-                <li><a href="resume.pdf" class="nav-link">Resumé</a></li> 
-                <li><a href="https://github.com/jedyeo" class="nav-link">github</a></li>
-            </ul>
-        </div>
-       <p>I plan to write some reviews of the courses I took at UBC, for future students...</p>
-    </div>
-    <script src="js/main.js"> </script>
+  <main>
+    <h1>UBC course review</h1>
+    <p class="lede">Reviews of the UBC courses I took, written for future students. I haven't written them yet.</p>
+  </main>
+</div>
 </body>
-
 </html>

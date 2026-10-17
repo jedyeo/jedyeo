@@ -1,3 +1,81 @@
-.vertical-menu {
-    width: 200px; /* Set a width if you like */
-  }
+@font-face{font-family:"Geist";src:url(../fonts/geist.woff2) format("woff2");font-weight:100 900;font-display:block}
+
+:root{
+  --fog:#EDF0F1;
+  --slate:#1E2A32;
+  --moss:#566570;
+  --rule:#C9D1D5;
+  --glacier:#1D5F8A;
+  --sans:"Geist",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--fog:#161D22;--slate:#E4E9EB;--moss:#92A0A8;--rule:#2E3A41;--glacier:#7FB6DC}
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--fog);color:var(--slate);font:400 1.0625rem/1.65 var(--sans)}
+a{color:var(--glacier);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.2em}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible{outline:2px solid var(--glacier);outline-offset:3px;border-radius:2px}
+
+.page{max-width:60rem;margin:0 auto;padding:2rem 1.5rem 5rem}
+
+nav ul{display:flex;flex-wrap:wrap;gap:.25rem 1.5rem;list-style:none;margin:0;padding:0;font-size:.9375rem;font-weight:500;line-height:1.4}
+nav a{color:var(--moss);text-decoration:none}
+nav a:hover,nav a[aria-current]{color:var(--slate);text-decoration:underline}
+
+h1{margin:clamp(3rem,8vw,5.5rem) 0 0;font-weight:640;font-size:clamp(2.75rem,9vw,5.5rem);line-height:.95;letter-spacing:-.045em}
+h1.name{margin-top:clamp(4rem,12vw,9rem);font-size:clamp(3.75rem,18vw,12rem);line-height:.88;letter-spacing:-.055em}
+/* One quiet moment: the name settles from a light weight to bold, once. */
+/* Hold the page until the font is in, so text never flashes in a fallback face and re-wraps. */
+.js body{opacity:0}
+.js.ready body{opacity:1;transition:opacity .25s ease-out}
+.js h1.name{animation:none}
+.js.ready h1.name{animation:settle 1.6s cubic-bezier(.2,.7,.2,1) both}
+html:not(.js) h1.name{animation:settle 1.6s cubic-bezier(.2,.7,.2,1) both}
+@keyframes settle{from{font-weight:200;letter-spacing:-.01em}to{font-weight:640;letter-spacing:-.055em}}
+@media (prefers-reduced-motion:reduce){.js.ready h1.name,html:not(.js) h1.name{animation:none}.js.ready body{transition:none}}
+
+.lede{max-width:28em;margin:2rem 0 0;font-size:1.5rem;line-height:1.4;letter-spacing:-.01em}
+
+/* Sections: a heavy rule starts each one, so Cvent, UBC and the rest read as separate blocks. */
+.rows{margin:clamp(3.5rem,8vw,6rem) 0 0}
+.row{display:grid;grid-template-columns:12rem minmax(0,37rem);column-gap:2rem;padding:2rem 0 3rem;border-top:2px solid var(--slate)}
+.row:last-child{border-bottom:1px solid var(--rule)}
+.row h2{margin:0;font-size:1.5rem;font-weight:620;line-height:1.2;letter-spacing:-.02em}
+.row>.head{grid-column:1}
+.row>.body{grid-column:2;min-width:0;padding-top:.3rem}
+.row .meta{margin:1rem 0 0;text-align:left;font-size:.9375rem;line-height:1.5;color:var(--moss)}
+.row .role{margin:.4rem 0 0;font-size:1rem;font-weight:600;line-height:1.4}
+.row .sub{margin:.2rem 0 0;font-size:.9375rem;line-height:1.5;color:var(--moss)}
+.row p{margin:0}
+.row p+p{margin-top:1em}
+
+/* Items inside a section: a hairline separates them from each other. */
+.item+.item{margin-top:1.75rem;padding-top:1.75rem;border-top:1px solid var(--rule)}
+.item h3{display:flex;flex-wrap:wrap;align-items:baseline;gap:.25rem .75rem;margin:0 0 .4rem;font-size:1.0625rem;font-weight:600;line-height:1.4}
+.item h3 span{font-size:.875rem;font-weight:400;color:var(--moss)}
+
+figure{margin:0}
+figure img{display:block;width:auto;max-width:100%;max-height:34rem;height:auto;background:var(--rule)}
+figcaption{margin-top:.75rem;font-size:.9375rem;line-height:1.5;color:var(--moss)}
+
+footer{margin-top:2.5rem;font-size:.9375rem;font-weight:500;line-height:1.5;color:var(--moss)}
+footer a{color:var(--slate)}
+
+@media (max-width:42rem){
+  .row{grid-template-columns:1fr;row-gap:.5rem;padding:1.5rem 0 2.5rem}
+  .row>.head,.row>.body{grid-column:1}
+  .row .meta{margin-top:.5rem}
+  .row>.body{padding-top:.5rem}
+}
+
+.row h2 a.plain{color:inherit;text-decoration:none}
+.row h2 a.plain:hover{text-decoration:underline}
+
+.item ul{margin:.75rem 0 0;padding-left:1.1rem}
+.item li+li{margin-top:.5rem}
+.item li::marker{color:var(--moss)}
+.row p+.item{margin-top:1.5rem}
+.row p strong{font-weight:600;margin-right:.5rem}
+.row .meta+.role{margin-top:1.5rem}

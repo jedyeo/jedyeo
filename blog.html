@@ -1,43 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-    <title>JED YEO</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog · Jed Yeo</title>
+<meta name="description" content="Photos and notes from Jed Yeo.">
+<link rel="preload" href="fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/main.css">
+<script>
+document.documentElement.className="js";
+Promise.race([document.fonts.load("640 1em Geist"),new Promise(function(r){setTimeout(r,1500)})]).then(function(){document.documentElement.classList.add("ready")});
+</script>
 </head>
+<body>
+<div class="page">
+  <nav aria-label="Main">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="blog.html" aria-current="page">Blog</a></li>
+      <li><a href="coursereview.html">UBC course review</a></li>
+      <li><a href="resume.pdf">Resumé</a></li>
+      <li><a href="https://www.linkedin.com/in/jedyeo/">LinkedIn</a></li>
+      <li><a href="https://github.com/jedyeo">GitHub</a></li>
+    </ul>
+  </nav>
 
-<body id="bg-img">
-    <div style="margin: 0 auto; max-width: 36em;">
-        <header>
-            <h1>Jed Yeo</h1>
-        </header>
-        <div class="container">
-            <ul>
-                <li><a href="index.html" class="nav-link">Home</a></li> 
-                <li><a href="coursereview.html" class="nav-link">UBC Course Review</a></li>
-                <li><a href="https://www.linkedin.com/in/jedyeo/" class="nav-link">LinkedIn</a></li>
-                <li><a href="resume.pdf" class="nav-link">Resumé</a></li> 
-                <li><a href="https://github.com/jedyeo" class="nav-link">github</a></li>
-            </ul>
+  <main>
+    <h1>Blog</h1>
+    <div class="rows">
+      <article class="row">
+        <div class="head">
+          <p class="role">July 2024</p>
+          <p class="sub">Austin, Texas</p>
         </div>
-        <h2>July 2024</h2>
-        <h4>Austin, Texas</h4>
-        <figure>
-            <img src="IMG_5943.png" alt="Gustavo Gus Fring the hamster.">
-            <figcaption>Gustavo "Gus" Fring, the hamster.</figcaption>
+        <figure class="body">
+          <img src="images/gus.jpg" width="1600" height="1200" alt="Gustavo Gus Fring the hamster." loading="lazy">
+          <figcaption>Gustavo "Gus" Fring, the hamster.</figcaption>
         </figure>
-        <h2>August 2023</h2>
-        <h4>Stuttgart, Germany</h4>
-        <figure>
-            <img src="IMG_1774.png" alt="The very first Porsche ever.">
-            <figcaption>The very first Porsche ever.</figcaption>
+      </article>
+      <article class="row">
+        <div class="head">
+          <p class="role">August 2023</p>
+          <p class="sub">Stuttgart, Germany</p>
+        </div>
+        <figure class="body">
+          <img src="images/porsche.jpg" width="1200" height="1600" alt="The very first Porsche ever." loading="lazy">
+          <figcaption>The very first Porsche ever.</figcaption>
         </figure>
+      </article>
     </div>
-    <script src="js/main.js"> </script>
+  </main>
+</div>
 </body>
-
 </html>

@@ -1,57 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-    <title>JED YEO</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jed Yeo · Software engineer</title>
+<meta name="description" content="Jed Yeo is a full-stack software engineer at Cvent, building event software for planners and their attendees, based in Austin, TX, USA.">
+<link rel="preload" href="fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/main.css">
+<script>
+document.documentElement.className="js";
+Promise.race([document.fonts.load("640 1em Geist"),new Promise(function(r){setTimeout(r,1500)})]).then(function(){document.documentElement.classList.add("ready")});
+</script>
 </head>
+<body>
+<div class="page">
+  <nav aria-label="Main">
+    <ul>
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="coursereview.html">UBC course review</a></li>
+      <li><a href="resume.pdf">Resumé</a></li>
+      <li><a href="https://www.linkedin.com/in/jedyeo/">LinkedIn</a></li>
+      <li><a href="https://github.com/jedyeo">GitHub</a></li>
+    </ul>
+  </nav>
 
-<body id="bg-img">
-    <div style="margin: 0 auto; max-width: 36em;">
-        <header>
-            <h1>Jed Yeo</h1>
-        </header>
-        <div class="container">
+  <main>
+    <h1 class="name">Jed Yeo</h1>
+    <p class="lede">Hi, I'm Jed. I'm a full-stack software engineer at Cvent, building event software for planners and their attendees, based in Austin, TX, USA. I studied Engineering Physics at the University of British Columbia in Vancouver, BC, Canada.</p>
+
+    <div class="rows">
+      <section class="row">
+        <div class="head">
+            <h2><a class="plain" href="https://www.cvent.com/">Cvent</a></h2>
+            <p class="role">Software Engineer II</p>
+            <p class="meta">October 2023 — Present<br>Austin, TX, USA</p>
+            <p class="role">Software Engineer Intern</p>
+            <p class="meta">June — August 2022<br>Vancouver, BC, Canada</p>
+          </div>
+        <div class="body">
+          <p>Cvent provides event management and marketing software for planners and their attendees.</p>
+          <article class="item">
+            <h3>Cvent Essentials <span>Now</span></h3>
+            <p>Full-stack engineer on the product for simple in-person events. My team is shipping a rebuilt attendee engagement experience and new planner-side tools.</p>
+          </article>
+          <article class="item">
+            <h3>Site editor for event websites <span>Now</span></h3>
             <ul>
-                <li><a href="blog.html" class="nav-link">Blog</a></li> 
-                <li><a href="coursereview.html" class="nav-link">UBC Course Review</a></li>
-                <li><a href="https://www.linkedin.com/in/jedyeo/" class="nav-link">LinkedIn</a></li>
-                <li><a href="resume.pdf" class="nav-link">Resumé</a></li>
-                <li><a href="https://github.com/jedyeo" class="nav-link">github</a></li>
+              <li>Built the template system for event websites: creating a site from starting templates, with a reusable template preview for browsing.</li>
+              <li>Keeping sites consistent across the editor, preview and live site across devices.</li>
             </ul>
+          </article>
+          <article class="item">
+            <h3>Attendee Hub</h3>
+            <p>Full-stack engineer on the attendee-facing platform for live, hybrid and virtual events.</p>
+            <ul>
+              <li>Integrated a chat moderation engine for high-load events of 10,000+ attendees.</li>
+              <li>Built Simple Sign Up, an on-the-fly registration flow that improved attendee conversion.</li>
+            </ul>
+          </article>
+          <article class="item">
+            <h3>Internship <span>2022</span></h3>
+            <p>Built chat moderation tools for an event discussion board and sped up back-end event updates by 400%.</p>
+          </article>
         </div>
-        <p>
-            I am currently based in Austin, Texas, U.S.A. as a software engineer for <a href="https://www.cvent.com/">Cvent</a>.
-            I graduated from the <a href="https://www.engphys.ubc.ca/about/">University of British Columbia, Vancouver</a>
-            in 2023 with a BASc in Applied Science, Engineering Physics. 
-        </p>
-        <p>
-            My main focus was in mathematics and computer science. I had the pleasure of taking honours level mathematics as well as
-            being involved with exciting research projects related to <a href="479.pdf">special relativity</a> (Einstein!) and
-             <a href="459.pdf">cryogenic electron microscopy</a> (Stanford!). I was also a UBC Computer Science teaching assistant for introductory computer science courses:
-            <a href="https://vancouver.calendar.ubc.ca/course-descriptions/courses/apsc-160-introduction-computation-engineering-design">APSC 160</a>
-            and 
-            <a href="https://vancouver.calendar.ubc.ca/course-descriptions/courses/cpsc-259-data-structures-and-algorithms-electrical-engineers">CPSC 259</a>.
-        </p>
-        <p>
-            At Cvent, I first worked on the Attendee Hub platform, collaborating with over 500 engineers to enhance the event experience for live,
-            hybrid, and virtual attendees. As a full-stack engineer, I worked on the integration of a chat moderation engine for large-scale events
-            with upwards of 10,000 attendees, and Simple Sign Up: a feature enabling attendees to register for events on the fly, improving user conversion rates.
-            My team is now focused on Cvent Essentials, a product for simple in-person events. We are currently working on releasing a revamped attendee engagement experience
-            and planner-side tools.
-        </p>
-        <p>
-            In my free time I enjoy snowboarding, playing poker, working out, or travelling the world. I also enjoy anything to do with motorsports or cars, and follow ice hockey and Formula 1.
-        </p>
-        <p>
-            I love meeting new people. Please do connect with me and start a conversation! 
-        </p>
+      </section>
+      <section class="row">
+        <div class="head">
+            <h2><a class="plain" href="https://www.engphys.ubc.ca/about/">University of British Columbia</a></h2>
+            <p class="role">Bachelor of Applied Science, Engineering Physics</p>
+            <p class="meta">May 2023<br>Vancouver, BC, Canada</p>
+          </div>
+        <div class="body">
+          <p>An accredited engineering degree in UBC's Faculty of Applied Science, combining physics, mathematics and engineering. I focused on computer science and math.</p>
+          <article class="item">
+            <h3>Research <span>Stanford Linear Accelerator Center, with UBC Computer Science</span></h3>
+            <p><a href="459.pdf">Molecular reconstruction for cryo-EM</a> (2022). Extended compSPI, an open-source toolkit maintained by researchers at the Stanford Linear Accelerator Center and UC Santa Barbara, with Bayesian expectation-maximization refinement for 3D protein reconstruction from simulated cryo-EM images.</p>
+          </article>
+          <article class="item">
+            <h3>Engineering Physics Project Laboratory <span>Virtual reality</span></h3>
+            <p><a href="479.pdf">Special relativity in virtual reality</a> (2023). Built a virtual reality proof-of-concept in Unity for Meta Quest where users see relativistic effects such as time dilation and space distortion as they move near the speed of light. <a href="https://github.com/ENPH-479-VR-Relativity/RelativisticFarm">Source on GitHub</a>.</p>
+          </article>
+          <article class="item">
+            <h3>Teaching</h3>
+            <p>Teaching assistant for the introductory computer science courses <a href="https://vancouver.calendar.ubc.ca/course-descriptions/courses/apscv-160">APSC 160</a> and <a href="https://vancouver.calendar.ubc.ca/course-descriptions/courses/cpscv-259">CPSC 259</a>.</p>
+          </article>
+        </div>
+      </section>
+      <section class="row">
+        <div class="head">
+            <h2>Skills</h2>
+          </div>
+        <div class="body">
+          <p><strong>Languages</strong> JavaScript, TypeScript, Python, Java, C#, C and C++<br>
+          <strong>Frontend</strong> React, HTML and CSS, responsive web design, WCAG accessibility<br>
+          <strong>Backend and APIs</strong> Node.js, GraphQL, API integration<br>
+          <strong>Cloud and data</strong> Google Cloud Platform, data pipelines<br>
+          <strong>Practices</strong> full-stack development, Agile, code review<br>
+          <strong>Tools</strong> Git, Unity</p>
+        </div>
+      </section>
+      <section class="row">
+        <div class="head">
+            <h2>Outside work</h2>
+          </div>
+        <div class="body">
+          <p>Snowboarding, poker, the gym and travel. I follow Formula 1 and ice hockey, and like anything to do with cars.</p>
+        </div>
+      </section>
     </div>
-    <script src="js/main.js"> </script>
-</body>
 
+    <footer>
+      <p>Say hello on <a href="https://www.linkedin.com/in/jedyeo/">LinkedIn</a> or see my <a href="resume.pdf">resumé</a>. I like meeting new people.</p>
+    </footer>
+  </main>
+</div>
+</body>
 </html>
